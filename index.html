@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Artificial Art</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="css/max_coin.css" rel="stylesheet">
+<link href="css/index.css" rel="stylesheet">
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var PanelMenu1 = document.querySelector('#PanelMenu1');
+   var bsPanelMenu1 = new bootstrap.Tooltip(PanelMenu1, {offset:[0,14],placement:'left', html: true, sanitize: false, title: '<span style="color:#F5F5F5;font-family:Arial;font-size:13px;">Click the hamburger icon to open the menu</span>', trigger: 'manual', animation: true, customClass:'ToolTip1'});
+   PanelMenu1.addEventListener('inserted.bs.tooltip', function(e)
+   {
+      var tooltip = document.getElementById(e.target.getAttribute('aria-describedby'));
+      tooltip.classList.add('animate-show');
+   });
+   PanelMenu1.addEventListener('hide.bs.tooltip', function(e)
+   {
+      var tooltip = document.getElementById(e.target.getAttribute('aria-describedby'));
+      tooltip.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<div id="wb_Shape3">
+<div id="Shape3"></div></div>
+<div id="wb_Shape1">
+<div id="Shape1"></div></div>
+<div id="wb_Shape2">
+<div id="Shape2"></div></div>
+<div id="wb_Image1">
+<img src="images/temka.jpg" id="Image1" alt="" width="475" height="475"></div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;font-family:Calibri;font-size:53px;"><strong>MAX COIN (Alpha)</strong></span></div>
+<div id="wb_Text3">
+<span style="color:#FFFFFF;font-family:'Open Sans';font-size:20px;">Гребем бабки лопатой тыкая по максиму</span></div>
+<a id="Button1" href="./clicker.html" target="_blank">НАЧАТЬ ЗАРАБАТЫВАТЬ</a>
+
+<script>
+var wb_Timer1;
+function TimerStartTimer1()
+{
+   wb_Timer1 = setTimeout(function()
+   {
+      var event = null;
+      bootstrap.Tooltip.getInstance('#PanelMenu1').show();
+   }, 1000);
+}
+function TimerStopTimer1()
+{
+   clearTimeout(wb_Timer1);
+}
+TimerStartTimer1();
+</script>
+<div id="wb_Image2">
+<img src="images/narulox.jpg" id="Image2" alt="" width="205" height="205"></div>
+<div id="wb_Image3">
+<img src="narulox2.jpeg" id="Image3" alt="" width="207" height="207"></div>
+<div id="wb_Image4">
+<img src="images/31ff02d4-f069-4a81-997c-ee0d48fdb49d.jpg" id="Image4" alt="" width="206" height="207"></div>
+<div id="wb_JavaScript1">
+<div id="countdown"></div>
+<script>
+var strTargetDate = "12/25/2024 12:00 AM";
+var strFormat = "$DAYS$ Дней  $HOURS$ Часов  $MINUTES$ Минут  $SECONDS$ Секунд";
+var strExpired = "Merry Christmas!";
+
+function doCountDown(seconds) 
+{
+   if (seconds < 0) 
+   {
+      document.getElementById("countdown").innerHTML = strExpired;
+      return;
+   }
+   var strMsg = strFormat;
+   strMsg = strMsg.replace("$DAYS$",    ((Math.floor(seconds/86400))%100000).toString());
+   strMsg = strMsg.replace("$HOURS$",   ((Math.floor(seconds/3600))%24).toString());
+   strMsg = strMsg.replace("$MINUTES$", ((Math.floor(seconds/60))%60).toString());
+   strMsg = strMsg.replace("$SECONDS$",  ((Math.floor(seconds))%60).toString()); 
+
+   document.getElementById("countdown").innerHTML = strMsg;
+
+   setTimeout("doCountDown(" + (seconds-1).toString() + ")", 1000);
+}
+function initCountDown()
+{
+   var dtTarget = new Date(strTargetDate);
+   var dtNow = new Date();
+   var dtDiff = new Date(dtTarget-dtNow);
+   var totalSeconds = Math.floor(dtDiff.valueOf()/1000);
+
+   doCountDown(totalSeconds);
+}
+initCountDown();
+</script>
+
+</div>
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:Impact;font-size:21px;">Листинг через</span></div>
+</div>
+</body>
+</html>

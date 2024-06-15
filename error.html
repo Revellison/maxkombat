@@ -1,0 +1,94 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Artificial Art</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="css/max_coin.css" rel="stylesheet">
+<link href="css/error.css" rel="stylesheet">
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var PanelMenu1 = document.querySelector('#PanelMenu1');
+   var bsPanelMenu1 = new bootstrap.Tooltip(PanelMenu1, {offset:[0,14],placement:'left', html: true, sanitize: false, title: '<span style="color:#F5F5F5;font-family:Arial;font-size:13px;">Click the hamburger icon to open the menu</span>', trigger: 'manual', animation: true, customClass:'ToolTip1'});
+   PanelMenu1.addEventListener('inserted.bs.tooltip', function(e)
+   {
+      var tooltip = document.getElementById(e.target.getAttribute('aria-describedby'));
+      tooltip.classList.add('animate-show');
+   });
+   PanelMenu1.addEventListener('hide.bs.tooltip', function(e)
+   {
+      var tooltip = document.getElementById(e.target.getAttribute('aria-describedby'));
+      tooltip.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+<div id="Layer1">
+<div id="wb_Image1">
+<img src="images/Opera Снимок_2024-06-15_225633_web.whatsapp.com.png" id="Image1" alt="" width="755" height="1023"></div>
+<div id="wb_JavaScript1">
+<div id="typewriter"></div>
+<script>
+var ch = 0;
+var txt = 'Fatal error: [File:D:\Jenkins\Live\Engine\Source\Runtime\D3D12RHI\Private\D3D12Util.cpp] [Line: 873] Interfaces.CopyCommandList->Close() failed at D:\Jenkins\Live\Engine\Source\Runtime\D3D12RHI\Private\D3D12CommandList.cpp:268 with error E_INVALIDARG';
+var speed = 1;
+var pause = -1;
+
+function typeWriterInit()
+{
+   ch = 0; 
+   document.getElementById("typewriter").innerHTML = '';
+   typeWriter();
+}
+function typeWriter() 
+{
+   if (ch < txt.length) 
+   {
+      document.getElementById("typewriter").innerHTML += txt.charAt(ch);
+      ch++;
+      setTimeout(typeWriter, speed);
+   }
+   else
+   {
+      if (pause > 0)
+      {
+          setTimeout(typeWriterInit, pause);
+      }
+   }
+}
+typeWriterInit();
+</script></div>
+</div>
+
+<script>
+var wb_Timer1;
+function TimerStartTimer1()
+{
+   wb_Timer1 = setTimeout(function()
+   {
+      var event = null;
+      bootstrap.Tooltip.getInstance('#PanelMenu1').show();
+   }, 1000);
+}
+function TimerStopTimer1()
+{
+   clearTimeout(wb_Timer1);
+}
+TimerStartTimer1();
+</script>
+<div id="wb_Icon1">
+<a href="./index.html"><div id="Icon1"><i class="fa fa-home"></i></div></a></div>
+</div>
+</body>
+</html>

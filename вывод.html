@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Artificial Art</title>
+<meta name="generator" content="WYSIWYG Web Builder 18 - https://www.wysiwygwebbuilder.com">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+<link href="css/max_coin.css" rel="stylesheet">
+<link href="css/вывод.css" rel="stylesheet">
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/wwb18.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function(event)
+{
+   var PanelMenu1 = document.querySelector('#PanelMenu1');
+   var bsPanelMenu1 = new bootstrap.Tooltip(PanelMenu1, {offset:[0,14],placement:'left', html: true, sanitize: false, title: '<span style="color:#F5F5F5;font-family:Arial;font-size:13px;">Click the hamburger icon to open the menu</span>', trigger: 'manual', animation: true, customClass:'ToolTip1'});
+   PanelMenu1.addEventListener('inserted.bs.tooltip', function(e)
+   {
+      var tooltip = document.getElementById(e.target.getAttribute('aria-describedby'));
+      tooltip.classList.add('animate-show');
+   });
+   PanelMenu1.addEventListener('hide.bs.tooltip', function(e)
+   {
+      var tooltip = document.getElementById(e.target.getAttribute('aria-describedby'));
+      tooltip.classList.remove('animate-show');
+      var forceReflow = e.target.offsetWidth;
+   });
+});
+</script>
+</head>
+<body>
+<div id="container">
+
+<script>
+var wb_Timer1;
+function TimerStartTimer1()
+{
+   wb_Timer1 = setTimeout(function()
+   {
+      var event = null;
+      bootstrap.Tooltip.getInstance('#PanelMenu1').show();
+   }, 1000);
+}
+function TimerStopTimer1()
+{
+   clearTimeout(wb_Timer1);
+}
+TimerStartTimer1();
+</script>
+<div id="wb_Icon1">
+<a href="./index.html"><div id="Icon1"><i class="fa fa-home"></i></div></a></div>
+<input type="text" id="Editbox1" name="Editbox1" value="" spellcheck="false">
+<div id="wb_Text1">
+<span style="color:#FFFFFF;font-family:'Open Sans';font-size:17px;">Введите адресс своего ERC20 кошелька</span></div>
+<div id="wb_Text2">
+<span style="color:#FFFFFF;font-family:'Open Sans';font-size:17px;">Введите кол-во токенов</span></div>
+<input type="number" id="Editbox2" name="Editbox1" value="" spellcheck="false">
+<a id="Button1" href="./error.html">Вывести</a>
+</div>
+</body>
+</html>
