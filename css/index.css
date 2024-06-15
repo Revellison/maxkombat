@@ -1,0 +1,594 @@
+div#container
+{
+   width: 1142px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: #000000;
+   color: #202425;
+   font-family: "Open Sans";
+   font-weight: 400;
+   font-weight: 400;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+*
+{
+   scrollbar-color: rgba(88,88,88,1.00) rgba(0,0,0,1.00);
+}
+*::-webkit-scrollbar
+{
+   width: 16px;
+}
+*::-webkit-scrollbar-track
+{
+   background: rgba(0,0,0,1.00);
+}
+*::-webkit-scrollbar-thumb
+{
+   background-color: rgba(88,88,88,1.00);
+   border: 2px solid rgba(0,0,0,1.00);
+}
+*::-webkit-scrollbar-corner
+{
+   background: rgba(0,0,0,1.00);
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+#Shape3
+{
+   width: 474px;
+   height: 476px;
+   background-color: #8676A3;
+   background-image: none;
+   border: 0px #B7D0EE solid;
+}
+#Shape3_text
+{
+   position: absolute;
+   pointer-events: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    left: 0.21%;
+   top: 0.21%;
+   width: 99.58%;
+   height: 99.58%;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#Shape1
+{
+   width: 474px;
+   height: 474px;
+   background-color: #DCA6B3;
+   background-image: none;
+   border: 0px #364C56 solid;
+}
+#Shape1_text
+{
+   position: absolute;
+   pointer-events: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    left: 0.21%;
+   top: 0.21%;
+   width: 99.58%;
+   height: 99.58%;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#Shape2
+{
+   width: 445px;
+   height: 454px;
+   background-color: #525284;
+   background-image: none;
+   border: 0px #364C56 solid;
+}
+#Shape2_text
+{
+   position: absolute;
+   pointer-events: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+    left: 0.22%;
+   top: 0.22%;
+   width: 99.55%;
+   height: 99.56%;
+   box-sizing: border-box;
+   overflow: hidden;
+   text-align: center;
+   word-wrap: break-word;
+}
+#wb_Image1
+{
+   vertical-align: top;
+}
+#Image1
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: transform-3d-flip-in-y 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#wb_Text3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+   animation: animate-fade-in-down 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+}
+#wb_Text3 div
+{
+   text-align: left;
+}
+#Button1
+{
+   box-sizing: border-box;
+   line-height: 58px;
+   text-decoration: none;
+   vertical-align: top;
+   border: 0px solid #3C3C3C;
+   border-radius: 0px;
+   background-color: #3C3C3C;
+   background-image: none;
+   color: #FFFFFF;
+   font-family: "Open Sans";
+   font-weight: normal;
+   font-style: normal;
+   font-size: 19px;
+   padding: 1px 6px 1px 6px;
+   text-align: center;
+   -webkit-appearance: none;
+   margin: 0;
+   animation: animate-fade-in-up 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+}
+}
+#Button1:focus
+{
+   outline: 0;
+}
+#Button1:hover
+{
+   background-color: #C0C0C0;
+   transition: background-color 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+#Button1
+{
+   transition: all 500ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms;
+}
+.ToolTip1
+{
+   position: absolute;
+   z-index: 1070;
+   display: block;
+   margin: 0;
+   line-height: 1.5;
+   text-align: left;
+   text-decoration: none;
+   opacity: 0;
+}
+.ToolTip1.show
+{
+   opacity: 0.9;
+}
+.ToolTip1 .tooltip-arrow
+{
+   position: absolute;
+   display: block;
+   width: 20px;
+   height: 10px;
+}
+.ToolTip1 .tooltip-arrow::before
+{
+   position: absolute;
+   content: "";
+   border-color: transparent;
+   border-style: solid;
+}
+.ToolTip1.bs-tooltip-start, .ToolTip1.bs-tooltip-auto[x-placement^="left"] 
+{
+   padding: 0 10px;
+}
+.ToolTip1.bs-tooltip-start .tooltip-arrow, .ToolTip1.bs-tooltip-auto[x-placement^="left"] .tooltip-arrow
+{
+   right: 0;
+   width: 10px;
+   height: 20px;
+}
+.ToolTip1.bs-tooltip-start .tooltip-arrow::before, .ToolTip1.bs-tooltip-auto[x-placement^="left"] .tooltip-arrow::before
+{
+   left: 0;
+   border-width: 10px 0 10px 10px;
+   border-left-color: rgba(60,60,60,1.00);
+}
+.ToolTip1 .tooltip-inner 
+{
+   max-width: 150px;
+   background-color: #3C3C3C;
+   background-image: none;
+   border: 0px solid #FFFFFF;
+   border-radius: 0px;
+   font-family: "Open Sans";
+   font-weight: normal;
+   font-size: 11px;
+   font-style: normal;
+   color: #000000;
+   text-align: left;
+   padding: 10px 10px 10px 10px;
+}
+.fade
+{
+   opacity: 0;
+   transition: opacity .15s linear;
+}
+.fade.show
+{
+   opacity: 1;
+}
+.ToolTip1.animate-show
+{
+   animation-duration: 1000ms;
+   animation-fill-mode: both;
+   animation-name: slide-left-in;
+}
+#wb_Image2
+{
+   vertical-align: top;
+}
+#Image2
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: transform-3d-flip-in-y 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Image3
+{
+   vertical-align: top;
+}
+#Image3
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: transform-3d-flip-in-y 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Image4
+{
+   vertical-align: top;
+}
+#Image4
+{
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   animation: transform-3d-flip-in-y 1000ms cubic-bezier(0.785, 0.135, 0.15, 0.86) 0ms 1 normal both;
+   margin: 0;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px solid #000000;
+   border-radius: 0px;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text1 div
+{
+   text-align: left;
+}
+#wb_Shape1
+{
+   position: absolute;
+   left: 68px;
+   top: 86px;
+   width: 474px;
+   height: 474px;
+   z-index: 1;
+}
+#wb_Shape2
+{
+   position: absolute;
+   left: 0px;
+   top: 10px;
+   width: 445px;
+   height: 454px;
+   z-index: 2;
+}
+#wb_Image1
+{
+   position: absolute;
+   left: 27px;
+   top: 41px;
+   width: 475px;
+   height: 475px;
+   z-index: 3;
+}
+#wb_Shape3
+{
+   position: absolute;
+   left: 102px;
+   top: 120px;
+   width: 474px;
+   height: 476px;
+   z-index: 0;
+}
+#wb_Image2
+{
+   position: absolute;
+   left: 143px;
+   top: 652px;
+   width: 205px;
+   height: 205px;
+   z-index: 9;
+}
+#Button1
+{
+   position: absolute;
+   left: 689px;
+   top: 308px;
+   width: 260px;
+   height: 60px;
+   z-index: 6;
+}
+#wb_Image3
+{
+   position: absolute;
+   left: 406px;
+   top: 651px;
+   width: 207px;
+   height: 207px;
+   z-index: 10;
+}
+#wb_Image4
+{
+   position: absolute;
+   left: 695px;
+   top: 651px;
+   width: 206px;
+   height: 206px;
+   z-index: 11;
+}
+#countdown
+{
+   color: #FFFFFF;
+   font-size: 27px;
+   font-family: "Impact";
+   font-weight: normal;
+   font-style: normal;
+   text-align: left;
+   text-decoration: none;
+}
+#wb_Text1
+{
+   position: absolute;
+   left: 613px;
+   top: 411px;
+   width: 149px;
+   height: 26px;
+   z-index: 13;
+}
+#wb_Text2
+{
+   position: absolute;
+   left: 681px;
+   top: 120px;
+   width: 418px;
+   height: 65px;
+   z-index: 4;
+}
+#wb_Text3
+{
+   position: absolute;
+   left: 681px;
+   top: 198px;
+   width: 418px;
+   height: 27px;
+   z-index: 5;
+}
+#wb_JavaScript1
+{
+   position: absolute;
+   left: 613px;
+   top: 445px;
+   width: 461px;
+   height: 30px;
+   z-index: 12;
+}
+@media only screen and (max-width: 1141px)
+{
+div#container
+{
+   width: 768px;
+}
+body
+{
+   background-color: #000000;
+   background-image: none;
+}
+#wb_Shape3
+{
+   left: 557px;
+   top: 306px;
+   width: 164px;
+   height: 348px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Shape3
+{
+   width: 164px;
+   height: 348px;
+}
+#wb_Shape1
+{
+   left: 172px;
+   top: 159px;
+   width: 425px;
+   height: 541px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Shape1
+{
+   width: 425px;
+   height: 541px;
+}
+#wb_Shape2
+{
+   left: 56px;
+   top: 30px;
+   width: 445px;
+   height: 454px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+}
+#Shape2
+{
+   width: 445px;
+   height: 454px;
+}
+#wb_Image1
+{
+   left: 147px;
+   top: 92px;
+   width: 475px;
+   height: 475px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 0;
+}
+#wb_Text2
+{
+   left: 74px;
+   top: 740px;
+   width: 599px;
+   height: 60px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text2
+{
+   margin: 0;
+   padding: 0;
+}
+#wb_Text3
+{
+   left: 74px;
+   top: 830px;
+   width: 582px;
+   height: 224px;
+   visibility: visible;
+   display: inline;
+}
+#wb_Text3
+{
+   margin: 0;
+   padding: 0;
+}
+#Button1
+{
+   left: 74px;
+   top: 1087px;
+   width: 212px;
+   height: 60px;
+   visibility: visible;
+   display: inline;
+   margin: 0;
+   padding: 1px 6px 1px 6px;
+}
+#Button1
+{
+   line-height: 58px;
+}
+#ToolTip1
+{
+   left: 810px;
+   top: 421px;
+   width: 13px;
+   height: 13px;
+   visibility: visible;
+   display: inline;
+}
+#Timer1
+{
+   left: 810px;
+   top: 463px;
+   width: 33px;
+   height: 33px;
+   visibility: visible;
+   display: inline;
+}
+}
